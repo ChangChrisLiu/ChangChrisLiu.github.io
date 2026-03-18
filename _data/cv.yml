@@ -2,96 +2,75 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Chang (Chris) Liu
+    - name: Email
+      value: changliu.chris@tamu.edu
     - name: Languages
-      value: English, German
+      value: English, Mandarin Chinese
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D., Mechanical Engineering
+      institution: Texas A&M University, College Station, TX
+      year: 2024 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "Advisor: Dr. Minghui Zheng (co-advised by Dr. Xiao Liang)"
+        - "Research Focus: Foundation models for robotic manipulation (VLA), reinforcement learning, perception and planning"
+    - title: M.S., Mechanical Engineering
+      institution: University at Buffalo, SUNY, Buffalo, NY
+      year: 2018 - 2021
       description:
-        - Description 1.
-        - Description 2.
+        - "Advisor: Dr. Minghui Zheng"
+        - "Thesis: Deep learning-based collision prediction and motion planning for collaborative robots"
+        - "GPA: 3.9/4.0"
+    - title: B.S., Energy and Power Engineering
+      institution: Huazhong University of Science and Technology, Wuhan, China
+      year: 2014 - 2018
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Graduate Research Assistant
+      institution: Texas A&M University, Control and Robotics Lab
+      year: 2024 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Implemented perception and disassembly sequence planning for EoL desktops on UR5e using YOLO, GNN, and VLM
+        - Designed data collection pipeline (teleoperation, dual cameras at 30 Hz) collecting 500+ demonstrations
+        - Collected and constructed a multimodal dataset of 20,000+ images for EoL desktops
+        - Proposed SELF-VLA, an agentic skill-based VLA framework improving task success rate by over 40%
+        - Developed RAISE robotic sorting system with 99%+ mAP, collaboration with Idaho National Lab
+    - title: Graduate Research Assistant
+      institution: University at Buffalo, SUNY, CAL-UB Lab
+      year: 2019 - 2021
       description:
-        - Description 1.
-        - Description 2.
+        - Trained Deep-ConvLSTM model for collision prediction from raw images (95% accuracy)
+        - Applied transfer learning on audio spectrograms for quadrotor fault detection (98% accuracy)
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Industry Experience
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Senior Technical Support Engineer
+      institution: HeyGears Inc., Irvine, CA
+      year: 2021 - 2023
+      description:
+        - Managed 70+ clients and 300+ industrial 3D printers across North America
+        - Led product testing cycles and authored technical improvement reports
+    - title: Mechanical Engineering Intern
+      institution: Logitech International S.A., Suzhou, China
+      year: 2019
+      description:
+        - Explored requirements from ME departments for New Product Development Introduction (NPDI)
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Technical Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Languages
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Python, MATLAB, SQL
+    - title: ML / RL
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - PyTorch, TensorFlow, Reinforcement Learning (SAC), Foundation Models, VLA (OpenVLA, OpenPI), GNN, Transformers
+    - title: Robotics
+      items:
+        - ROS2, MoveIt, Isaac Sim, SolidWorks, UR5e, Vicon, Teleoperation
