@@ -5,6 +5,10 @@
       value: Chang (Chris) Liu
     - name: Email
       value: changliu.chris@tamu.edu
+    - name: Phone
+      value: +1 (716) 907-4211
+    - name: Location
+      value: College Station, TX
     - name: Languages
       value: English, Mandarin Chinese
 
@@ -13,64 +17,103 @@
   contents:
     - title: Ph.D., Mechanical Engineering
       institution: Texas A&M University, College Station, TX
-      year: 2024 - Present
+      year: Jan. 2024 - Present
       description:
         - "Advisor: Dr. Minghui Zheng (co-advised by Dr. Xiao Liang)"
-        - "Research Focus: Foundation models for robotic manipulation (VLA), reinforcement learning, perception and planning"
+        - "Research Focus: Foundation models for robotic manipulation (VLA), reinforcement learning for sim-to-real transfer, graph-based world models, and intelligent disassembly/remanufacturing"
     - title: M.S., Mechanical Engineering
       institution: University at Buffalo, SUNY, Buffalo, NY
-      year: 2018 - 2021
+      year: Aug. 2018 - Feb. 2021
       description:
         - "Advisor: Dr. Minghui Zheng"
         - "Thesis: Deep learning-based collision prediction and motion planning for collaborative robots"
         - "GPA: 3.9/4.0"
     - title: B.S., Energy and Power Engineering
       institution: Huazhong University of Science and Technology, Wuhan, China
-      year: 2014 - 2018
+      year: Sep. 2014 - June 2018
+
+- title: Publications
+  type: nested_list
+  contents:
+    - title: Papers in Preparation
+      items:
+        - "<b>C. Liu</b>, et al. \"Agentic Skill-Based VLA with Reinforcement Learning from Human Correction and Memory-Augmented Multi-Task Learning.\" <i>In preparation for CoRL 2026.</i>"
+        - "<b>C. Liu</b>, et al. \"Graph-Based World Model for Synthetic Data Generation in Vision-Language-Action Training.\" <i>In preparation for CoRL 2026.</i>"
+    - title: Preprints & Under Review
+      items:
+        - "<b>C. Liu</b>, S. Tian, X. Liang, M. Zheng. \"SELF-VLA: A Skill Enhanced Agentic Vision-Language-Action Framework for Contact-Rich Disassembly.\" <i>arXiv:2603.11080</i> (2026)."
+        - "<b>C. Liu</b>, S. Tian, S. Behdad, X. Liang, M. Zheng. \"Vision-Language-Action Models for Selective Robotic Disassembly.\" <i>arXiv:2512.04446</i> (2025)."
+    - title: Published (Journal & Conference)
+      items:
+        - "<b>C. Liu</b>, B. Balasubramaniam, et al. \"RAISE: Robot-Assisted Selective Disassembly and Sorting for End-of-Life Phones.\" <i>Resources, Conservation and Recycling</i> 225, 108609 (2026). Cited by 6."
+        - "W. Liu, <b>C. Liu</b>, X. Liang, M. Zheng. \"A Hybrid Task-Constrained Motion Planning for Collaborative Robots in Intelligent Remanufacturing.\" <i>Mechatronics</i> 102, 103222 (2024). Cited by 8."
+        - "W. Liu, <b>C. Liu</b>, S. Sajedi, H. Su, X. Liang, M. Zheng. \"An Audio-Based Risky Flight Detection Framework for Quadrotors.\" <i>IET Cyber-Systems and Robotics</i> 6(1), e12105 (2024). Cited by 4."
+        - "H. Zhao, <b>C. Liu</b>, et al. \"Precision 3D Profilometry of Consumer-Grade Computer Enclosures Using High Dynamic Range Fringe Projection.\" <i>Applied Optics</i> 64(30), 8986-8994 (2025). Cited by 1."
+        - "<b>C. Liu</b>, W. Liu, Z. Chen, M. Zheng. \"A Deep-ConvLSTM Collision Prediction Model for Manipulators in Dynamic Environment.\" <i>IFAC-PapersOnLine</i> 55(27), 68-75 (2022). Cited by 4."
+        - "Z. Chen, <b>C. Liu</b>, H. Su, X. Liang, M. Zheng. \"A Hybrid Disturbance Observer for Delivery Drone's Oscillation Suppression.\" <i>Mechatronics</i> 88, 102907 (2022). Cited by 6."
 
 - title: Research Experience
   type: time_table
   contents:
     - title: Graduate Research Assistant
       institution: Texas A&M University, Control and Robotics Lab
-      year: 2024 - Present
+      year: Jan. 2024 - Present
       description:
-        - Implemented perception and disassembly sequence planning for EoL desktops on UR5e using YOLO, GNN, and VLM
-        - Designed data collection pipeline (teleoperation, dual cameras at 30 Hz) collecting 500+ demonstrations
-        - Collected and constructed a multimodal dataset of 20,000+ images for EoL desktops
-        - Proposed SELF-VLA, an agentic skill-based VLA framework improving task success rate by over 40%
-        - Developed RAISE robotic sorting system with 99%+ mAP, collaboration with Idaho National Lab
+        - title: Robotic Disassembly for End-of-Life Products
+          contents:
+            - "Implemented perception and disassembly sequence planning for various EoL desktops on UR5e using YOLO, GNN, and VLM"
+            - "Designed the complete data collection pipeline (teleoperation, dual cameras at 30 Hz, phase-labeled episodes) for VLA training, collecting 500+ demonstrations across multiple product types"
+            - "Collected and constructed a multimodal dataset of 20,000+ images for EoL desktops, covering computer vision, graph construction, and supporting LLM/VLM training"
+            - "Proposed SELF-VLA, an agentic skill-based VLA framework that improves task success rate by over 40% compared to end-to-end VLA baselines"
+        - title: RAISE - Robot-Assisted Sorting for EoL Phones
+          contents:
+            - "Developed the robotic manipulation workflow, including an automated YOLO-based sorting system (99%+ mAP) on UR5e. Collaboration with Idaho National Laboratory"
+        - title: Additional Contributions
+          contents:
+            - "Built a distributed teleoperation system on the GELLO framework with ZMQ-based communication, dual-camera streaming (Intel RealSense D435i + Luxonis OAK-D Pro at 30Hz), and HOSAS joystick control"
+            - "Developed real-time disassembly sequence planning using GNN and VLM for robotic e-waste disassembly"
+            - "Contributed to precision 3D scanning of computer enclosures using high dynamic range fringe projection (published in Applied Optics)"
     - title: Graduate Research Assistant
       institution: University at Buffalo, SUNY, CAL-UB Lab
-      year: 2019 - 2021
+      year: Aug. 2019 - Apr. 2021
       description:
-        - Trained Deep-ConvLSTM model for collision prediction from raw images (95% accuracy)
-        - Applied transfer learning on audio spectrograms for quadrotor fault detection (98% accuracy)
+        - "Trained a Deep-ConvLSTM model that predicts manipulator collisions from raw images (95% accuracy) without an explicit dynamics model, enabling safer human-robot collaboration"
+        - "Applied reinforcement learning techniques for collaborative robot path planning and safety-aware control"
+        - "Developed a transfer learning framework for quadrotor propeller damage detection using audio signals, achieving 98% accuracy across 4 fault types"
+        - "Set up, calibrated, and maintained laboratory equipment including Vicon motion capture system, UR5e manipulators, and drone platforms"
 
 - title: Industry Experience
   type: time_table
   contents:
     - title: Senior Technical Support Engineer
       institution: HeyGears Inc., Irvine, CA
-      year: 2021 - 2023
+      year: Apr. 2021 - Nov. 2023
       description:
-        - Managed 70+ clients and 300+ industrial 3D printers across North America
-        - Led product testing cycles and authored technical improvement reports
+        - "Managed technical support for the East Coast region, overseeing 70+ clients and 300+ industrial 3D printing machines"
+        - "Provided consultative guidance on advanced dental applications to improve client workflows and drive business growth"
+        - "Led new product testing cycles and authored comprehensive test reports that directly contributed to hardware and software improvements"
     - title: Mechanical Engineering Intern
       institution: Logitech International S.A., Suzhou, China
-      year: 2019
+      year: May 2019 - Aug. 2019
       description:
-        - Explored requirements from ME departments for New Product Development Introduction (NPDI)
+        - "Explored and collected requirements from multiple ME departments for New Product Development Introduction (NPDI) processes"
+        - "Established a sample database and process instruction system for NPDI using Axure and Flowchart tools"
 
 - title: Technical Skills
   type: nested_list
   contents:
-    - title: Languages
+    - title: Programming Languages
       items:
         - Python, MATLAB, SQL
-    - title: ML / RL
+    - title: Deep Learning Frameworks
       items:
-        - PyTorch, TensorFlow, Reinforcement Learning (SAC), Foundation Models, VLA (OpenVLA, OpenPI), GNN, Transformers
-    - title: Robotics
+        - PyTorch, TensorFlow, Keras
+    - title: Robotics & Simulation
       items:
-        - ROS2, MoveIt, Isaac Sim, SolidWorks, UR5e, Vicon, Teleoperation
+        - ROS2, MoveIt, Isaac Sim, SolidWorks
+    - title: ML/RL Methods
+      items:
+        - Reinforcement Learning (SAC), Foundation Models, VLA (OpenVLA, OpenPI), GNN, Transformers, YOLO, Transfer Learning
+    - title: Hardware
+      items:
+        - UR5e Robotic Arm, Vicon Motion Capture, Quadrotor Drones, Teleoperation (GELLO, HOSAS)
