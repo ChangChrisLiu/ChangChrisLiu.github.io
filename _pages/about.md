@@ -25,10 +25,12 @@ latest_posts:
   enabled: false
 ---
 
-I am a Ph.D. student in Mechanical Engineering at Texas A&M University, advised by [Dr. Minghui Zheng](https://people.tamu.edu/~mzheng/). My research focuses on utilizing robotics and foundation models to solve real-world industrial tasks, with particular excitement about the manipulation and perception capabilities of humanoid robots.
+Hey there! I'm Chang, a Ph.D. student at Texas A&M who spends most of his time teaching robots how to take things apart — which, if you think about it, is the opposite of what most engineers do. I'm advised by [Dr. Minghui Zheng](https://people.tamu.edu/~mzheng/), who somehow keeps encouraging this destructive behavior.
 
-My goal is to build a complete pipeline: train VLA models from human demonstrations, construct realistic simulation environments with RL to reduce out-of-distribution issues, and leverage world models to generate synthetic data for more robust training. The pipeline further refines performance through human correction data with RL, and moves toward agentic skill-based frameworks that first improve reliability on single tasks, then scale to complex long-horizon behaviors.
+My research is all about making robots smarter at real-world manipulation using foundation models and reinforcement learning. I'm particularly excited about humanoid robots — because apparently giving robots hands wasn't chaotic enough, we had to give them language understanding too.
 
-My recent work includes [SELF-VLA](https://arxiv.org/abs/2603.11080), an agentic skill-based VLA framework for contact-rich disassembly that improves task success rates by over 40% compared to end-to-end baselines. I have built perception-to-action pipelines (YOLO, GNN, VLM), designed [data collection infrastructure](https://github.com/ChangChrisLiu/DataCollection) with 500+ demonstrations, and constructed a multimodal dataset of 20,000+ images.
+Here's the grand plan: train VLA (Vision-Language-Action) models from human demonstrations, build simulation environments so robots can fail safely before failing expensively in the real world, and then use world models to generate synthetic data because real data collection involves a lot of "please don't drop that." The pipeline keeps improving through human correction data with RL, working toward agentic skill-based frameworks that go from "can do one thing reliably" to "can do many things without breaking everything."
 
-I am also broadly interested in computer vision, reinforcement learning, and applying different foundation models to robotic applications.
+My latest work, [SELF-VLA](https://arxiv.org/abs/2603.11080), is an agentic framework that improved task success rates by over 40% compared to end-to-end baselines — which in robotics terms means the robot went from "mostly confused" to "occasionally impressive." I've also built [data collection pipelines](https://github.com/ChangChrisLiu/DataCollection) with 500+ demonstrations and a 20,000+ image dataset, because apparently my robot needs more training data than I needed coffee during quals.
+
+When I'm not in the lab, I'm broadly interested in computer vision, RL, and finding new ways to apply foundation models to robotics. Also cat videos. The cat videos are for research purposes.
