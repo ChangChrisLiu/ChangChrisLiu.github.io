@@ -9,14 +9,12 @@ last_name: Liu
 contact_note: >
   Email: Changliu.chris@tamu.edu; Phone: +1 (716)907-4211
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Chang Liu's personal website.
+  Chang Liu — Ph.D. researcher in robotics, reinforcement learning, and foundation models at Texas A&M University.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+  &copy; 2026 Chang Liu. Built with <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
 keywords: Robotics, Reinforcement Learning, Foundation Models, VLA, Computer Vision, Deep Learning # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🤖 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://ChangChrisLiu.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -32,7 +30,7 @@ back_to_top: true # set to false to disable the back to top button
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
-  enabled: true
+  enabled: false
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
 
