@@ -35,22 +35,28 @@
 - title: Publications
   type: nested_list
   contents:
-    - title: Papers in Preparation
+    - title: Peer-Reviewed Journal Articles
       items:
-        - "<b>C. Liu</b>, et al. \"Agentic Skill-Based VLA with Reinforcement Learning from Human Correction and Memory-Augmented Multi-Task Learning.\" <i>In preparation for CoRL 2026.</i>"
-        - "<b>C. Liu</b>, et al. \"Graph-Based World Model for Synthetic Data Generation in Vision-Language-Action Training.\" <i>In preparation for CoRL 2026.</i>"
+        - "<b>C. Liu</b>, S. Behdad, P. Pagilla, X. Liang, M. Zheng. \"Transforming Remanufacturing Automation with Large Language Models: A Forward-Looking Analysis with Case Studies.\" <i>Robotics and Computer-Integrated Manufacturing</i> 103, 103361 (2027)."
+        - "X. Zhang, <b>C. Liu</b>, X. Liang, M. Zheng, S. Behdad. \"Evaluating Large and Lightweight Vision Models for Irregular Component Segmentation in E-Waste Disassembly.\" <i>Journal of Manufacturing Science and Engineering</i> 148(10), 101005 (2026)."
+        - "<b>C. Liu</b>, B. Balasubramaniam, N. A. Yancey, M. H. Severson, A. Shine, P. Bove, B. Li, X. Liang, M. Zheng. \"RAISE: A Robot-Assisted Selective Disassembly and Sorting System for End-of-Life Phones.\" <i>Resources, Conservation and Recycling</i> 225, 108609 (2026)."
+        - "H. Zhao, <b>C. Liu</b>, B. Balasubramaniam, J. Li, J. Song, X. Liang, M. Zheng, B. Li. \"Precision 3D Profilometry of Consumer-Grade Computer Enclosures Using High Dynamic Range Fringe Projection.\" <i>Applied Optics</i> 64(30), 8986-8994 (2025)."
+        - "W. Liu, <b>C. Liu</b>, X. Liang, M. Zheng. \"A Hybrid Task-Constrained Motion Planning for Collaborative Robots in Intelligent Remanufacturing.\" <i>Mechatronics</i> 102, 103222 (2024)."
+        - "W. Liu, <b>C. Liu</b>, S. Sajedi, H. Su, X. Liang, M. Zheng. \"An Audio-Based Risky Flight Detection Framework for Quadrotors.\" <i>IET Cyber-Systems and Robotics</i> 6(1), e12105 (2024)."
+        - "Z. Chen, <b>C. Liu</b>, H. Su, X. Liang, M. Zheng. \"A Hybrid Disturbance Observer for Delivery Drone's Oscillation Suppression.\" <i>Mechatronics</i> 88, 102907 (2022)."
+    - title: Peer-Reviewed Conference Papers
+      items:
+        - "<b>C. Liu</b>, et al. \"PACER: Process-Aware VLA Policy Learning from Human Corrections for Robotic Disassembly.\" <i>Conference on Robot Learning (CoRL)</i>, 2026. <b>Accepted.</b>"
+        - "<b>C. Liu</b>, W. Liu, Z. Chen, M. Zheng. \"A Deep-ConvLSTM Collision Prediction Model for Manipulators in Dynamic Environment.\" <i>IFAC-PapersOnLine</i> 55(27), 68-75 (2022)."
     - title: Preprints & Under Review
       items:
+        - "S. Tian, <b>C. Liu</b>, M. Zheng, X. Liang. \"NeurRAFT: Robot Motion Planning via Anchor-Level Flow Matching with Clearance-Aware Preference Tuning.\" <i>arXiv:2608.24026</i> (2026)."
+        - "J. Lei, <b>C. Liu</b>, Y. She, X. Liang, M. Zheng. \"Learning When to See and When to Feel: Adaptive Vision-Torque Fusion for Contact-Aware Manipulation.\" <i>arXiv:2604.01414</i> (2026)."
         - "<b>C. Liu</b>, S. Tian, X. Liang, M. Zheng. \"SELF-VLA: A Skill Enhanced Agentic Vision-Language-Action Framework for Contact-Rich Disassembly.\" <i>arXiv:2603.11080</i> (2026)."
         - "<b>C. Liu</b>, S. Tian, S. Behdad, X. Liang, M. Zheng. \"Vision-Language-Action Models for Selective Robotic Disassembly.\" <i>arXiv:2512.04446</i> (2025)."
-    - title: Published (Journal & Conference)
+    - title: Citation Metrics
       items:
-        - "<b>C. Liu</b>, B. Balasubramaniam, et al. \"RAISE: Robot-Assisted Selective Disassembly and Sorting for End-of-Life Phones.\" <i>Resources, Conservation and Recycling</i> 225, 108609 (2026). Cited by 6."
-        - "W. Liu, <b>C. Liu</b>, X. Liang, M. Zheng. \"A Hybrid Task-Constrained Motion Planning for Collaborative Robots in Intelligent Remanufacturing.\" <i>Mechatronics</i> 102, 103222 (2024). Cited by 8."
-        - "W. Liu, <b>C. Liu</b>, S. Sajedi, H. Su, X. Liang, M. Zheng. \"An Audio-Based Risky Flight Detection Framework for Quadrotors.\" <i>IET Cyber-Systems and Robotics</i> 6(1), e12105 (2024). Cited by 4."
-        - "H. Zhao, <b>C. Liu</b>, et al. \"Precision 3D Profilometry of Consumer-Grade Computer Enclosures Using High Dynamic Range Fringe Projection.\" <i>Applied Optics</i> 64(30), 8986-8994 (2025). Cited by 1."
-        - "<b>C. Liu</b>, W. Liu, Z. Chen, M. Zheng. \"A Deep-ConvLSTM Collision Prediction Model for Manipulators in Dynamic Environment.\" <i>IFAC-PapersOnLine</i> 55(27), 68-75 (2022). Cited by 4."
-        - "Z. Chen, <b>C. Liu</b>, H. Su, X. Liang, M. Zheng. \"A Hybrid Disturbance Observer for Delivery Drone's Oscillation Suppression.\" <i>Mechatronics</i> 88, 102907 (2022). Cited by 6."
+        - "65 total citations, h-index 5, i10-index 2 (<a href=\"https://scholar.google.com/citations?user=MTOVnMwAAAAJ&hl=en\">Google Scholar</a>, September 2026)."
 
 - title: Research Experience
   type: time_table
