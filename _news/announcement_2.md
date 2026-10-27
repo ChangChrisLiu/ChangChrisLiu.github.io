@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper **RAISE: Robot-Assisted Selective Disassembly and Sorting for End-of-Life Phones** has been published in *Resources, Conservation and Recycling*.
+Our paper **RAISE: Robot-Assisted Selective Disassembly and Sorting for End-of-Life Phones** has been published in _Resources, Conservation and Recycling_.

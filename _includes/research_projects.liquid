@@ -1,0 +1,39 @@
+<div class="research-projects">
+  {% for project in site.data.research %}
+    <article class="research-project" id="{{ project.id }}">
+      <a class="research-image" href="{{ project.links.first.url }}" aria-label="Read the {{ project.name }} paper">
+        <picture>
+          {% if site.imagemagick.enabled %}
+            {% unless project.image contains '.webp' %}
+              {% assign image_stem = project.image | split: '.' | first %}
+              <source
+                type="image/webp"
+                srcset="{{ image_stem | append: '-480.webp' | relative_url }} 480w, {{ image_stem | append: '-800.webp' | relative_url }} 800w"
+                sizes="(max-width: 650px) calc(100vw - 44px), 260px"
+              >
+            {% endunless %}
+          {% endif %}
+          <img src="{{ project.image | relative_url }}" alt="{{ project.image_alt }}" loading="lazy" width="600" height="400">
+        </picture>
+      </a>
+      <div class="research-project-copy">
+        <h3>
+          {{ project.name }}
+          <span class="project-venue">{{ project.venue }}</span>
+        </h3>
+        <p class="project-title">{{ project.title }}</p>
+        <p>{{ project.description }}</p>
+        {% if project.result %}
+          <p class="project-result">{{ project.result }}</p>
+        {% endif %}
+        <ul class="project-links" aria-label="{{ project.name }} resources">
+          {% for link in project.links %}
+            <li>
+              <a href="{{ link.url }}">{{ link.label }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </article>
+  {% endfor %}
+</div>

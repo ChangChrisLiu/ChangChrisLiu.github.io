@@ -2,37 +2,11 @@
 layout: about
 title: About
 permalink: /
-subtitle: Ph.D. Student, <a href='https://www.tamu.edu/'>Texas A&M University</a> · Mechanical Engineering
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false
-  more_info: >
-    <p>Control and Robotics Lab</p>
-    <p>Texas A&M University</p>
-    <p>College Station, TX</p>
-
-selected_papers: true
-social: true
-
-announcements:
-  enabled: true
-  scrollable: true
-  limit: 5
-
-latest_posts:
-  enabled: false
+description: Chang (Chris) Liu is a Ph.D. researcher at Texas A&M University working on robot learning, vision-language-action models, and reliable manipulation.
 ---
 
-I'm a Ph.D. student at [Texas A&M University](https://www.tamu.edu/) working with [Dr. Minghui Zheng](https://zh.engr.tamu.edu/) in the Control and Robotics Lab. I build robots that can perceive, plan, and manipulate in the real world — specifically for automated e-waste disassembly in collaboration with the Department of Energy and Idaho National Laboratory.
+I'm a Ph.D. student in Mechanical Engineering at [Texas A&M University](https://www.tamu.edu/), advised by [Dr. Minghui Zheng](https://zh.engr.tamu.edu/) in the Control and Robotics Lab.
 
-Before coming back to academia, I spent two and a half years in industry as a senior technical support engineer at [HeyGears](https://www.heygears.com/), managing 70+ clients and 300+ industrial printers. That experience taught me what industry actually needs from automation — and what it's still missing.
+I study how robots can **learn from experience and recover from mistakes**. My work connects vision-language-action (VLA) models, human corrections, and structured manipulation skills, using the disassembly of end-of-life electronics as a real-world testbed.
 
-**Research Interests:** Robotics, Foundation Models (VLA, World Models), Reinforcement Learning, Computer Vision, Perception & Planning, Sim-to-Real Transfer, Humanoid Robots
-
-<a href="{{ '/assets/pdf/CV.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button" style="background-color: var(--global-theme-color); color: white; border: none; padding: 8px 20px; font-size: 0.9rem; border-radius: 4px;">Download CV (PDF)</a>
-&nbsp;&nbsp;
-<a href="https://scholar.google.com/citations?user=MTOVnMwAAAAJ&hl=en" class="btn btn-sm z-depth-0" role="button" style="border: 1px solid var(--global-theme-color); color: var(--global-theme-color); padding: 8px 20px; font-size: 0.9rem; border-radius: 4px;">Google Scholar</a>
-&nbsp;&nbsp;
-<a href="https://github.com/ChangChrisLiu" class="btn btn-sm z-depth-0" role="button" style="border: 1px solid var(--global-theme-color); color: var(--global-theme-color); padding: 8px 20px; font-size: 0.9rem; border-radius: 4px;">GitHub</a>
+Before my Ph.D., I worked in industrial 3D printing at [HeyGears](https://www.heygears.com/). Supporting automation in the field shaped the question behind my research: how can we make capable robot policies work reliably outside a carefully prepared demo?

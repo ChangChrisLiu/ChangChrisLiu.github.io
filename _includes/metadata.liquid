@@ -111,6 +111,9 @@
       {% when 'github_username' %}
         {% capture link %}https://github.com/{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
+      {% when 'huggingface_username' %}
+        {% capture link %}https://huggingface.co/{{ social[1] }}{% endcapture %}
+        {% assign sameaslinks = sameaslinks | push: link %}
       {% when 'gitlab_username' %}
         {% capture link %}https://gitlab.com/{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}

@@ -1,0 +1,44 @@
+- id: pacer
+  name: PACER
+  title: Learning from robot experience and human corrections
+  venue: CoRL 2026
+  image: /assets/img/research/pacer.webp
+  image_alt: A robot gripper approaching a CPU fan in the PACER disassembly experiments
+  description: >-
+    PACER improves VLA policies through native supervised fine-tuning, using robot rollouts, human corrections, and clean demonstrations. Task progress and execution outcomes determine how each valid action chunk contributes to learning.
+  result: 87/100 successful approach-and-handoff trials, compared with 54/100 for vanilla post-SFT, on a held-out UR5e benchmark across five component classes.
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2610.19248
+    - label: Project & videos
+      url: https://pacer-corl.github.io/
+    - label: Code
+      url: https://github.com/ChangChrisLiu/PACER
+
+- id: self-vla
+  name: SELF-VLA
+  title: Connecting learned policies with disassembly skills
+  venue: Preprint · 2026
+  image: /assets/img/publication_preview/selfvla.png
+  image_alt: SELF-VLA framework showing visual observations, a VLA planner, a skill library, and a VLA corrector
+  description: >-
+    An agentic VLA framework that combines learned approach and recovery policies with explicit manipulation skills. The robot coordinates perception, action, and skill execution to handle contact-rich disassembly.
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2603.11080
+    - label: Project & videos
+      url: https://self-vla.github.io/
+
+- id: raise
+  name: RAISE
+  title: A complete system for end-of-life phone disassembly
+  venue: Resources, Conservation & Recycling · 2026
+  image: /assets/img/research/raise.png
+  image_alt: RAISE system integrating adaptive cutting, robotic sorting, and battery removal for end-of-life phones
+  description: >-
+    A collaborative system that integrates adaptive cutting, vision-based robotic sorting, and battery removal. My work focused on the UR5e sorting station, including perception, hand-eye calibration, and system integration with Idaho National Laboratory.
+  links:
+    - label: Journal article
+      url: https://doi.org/10.1016/j.resconrec.2025.108609
+    - label: Preprint
+      url: https://arxiv.org/abs/2509.23048

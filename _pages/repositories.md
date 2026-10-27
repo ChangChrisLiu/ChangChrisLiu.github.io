@@ -1,47 +1,17 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+title: Open-source software
+description: Code and experimental infrastructure from my research.
 nav: false
-nav_order: 4
 ---
 
-{% if site.data.repositories.github_users %}
+## PACER
 
-## GitHub users
+[Process-aware VLA post-training](https://github.com/ChangChrisLiu/PACER), with rollout collection, correction evidence, and policy evaluation. See the [project page](https://pacer-corl.github.io/) for the research overview.
 
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for user in site.data.repositories.github_users %}
-    {% include repository/repo_user.liquid username=user %}
-  {% endfor %}
-</div>
+## Robot data collection
 
----
+[A GELLO-based teleoperation platform](https://github.com/ChangChrisLiu/DataCollection) for UR5e control, camera capture, and dataset recording and export.
 
-{% if site.repo_trophies.enabled %}
-{% for user in site.data.repositories.github_users %}
-{% if site.data.repositories.github_users.size > 1 %}
-
-  <h4>{{ user }}</h4>
-  {% endif %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo_trophies.liquid username=user %}
-  </div>
-
----
-
-{% endfor %}
-{% endif %}
-{% endif %}
-
-{% if site.data.repositories.github_repos %}
-
-## GitHub Repositories
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.liquid repository=repo %}
-  {% endfor %}
-</div>
-{% endif %}
+[More on GitHub](https://github.com/ChangChrisLiu).

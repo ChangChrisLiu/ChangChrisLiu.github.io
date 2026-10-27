@@ -1,6 +1,7 @@
 ---
 layout: page
-title: news
+title: News
+description: Research updates, publications, and project releases.
 permalink: /news/
 ---
 

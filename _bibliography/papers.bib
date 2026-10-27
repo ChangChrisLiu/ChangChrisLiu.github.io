@@ -5,12 +5,15 @@
   abbr={CoRL},
   bibtex_show={true},
   title={PACER: Process-Aware VLA Policy Learning from Human Corrections for Robotic Disassembly},
-  author={Liu, Chang and others},
-  booktitle={Conference on Robot Learning (CoRL)},
+  author={Liu, Chang and Tian, Sibo and Gong, Litian and Fan, Zhiwen and Li, Jiachen and Liang, Xiao and Zheng, Minghui},
+  booktitle={10th Conference on Robot Learning (CoRL), Austin, TX},
   year={2026},
   selected={true},
   additional_info={Accepted},
-  abstract={A process-aware vision-language-action policy learning framework that turns short human teleoperated corrections into training signal for contact-rich robotic disassembly. Accepted to CoRL 2026.}
+  arxiv={2610.19248},
+  website={https://pacer-corl.github.io/},
+  code={https://github.com/ChangChrisLiu/PACER},
+  abstract={PACER learns from robot rollouts, human corrections, and clean demonstrations through native supervised fine-tuning. It uses task progress, trace source, and execution outcome to weight valid action chunks in the native supervised action loss, then selects a policy through held-out validation. On a held-out UR5e benchmark covering five motherboard component classes, PACER achieves 87/100 successful approach-and-handoff trials, compared with 54/100 for vanilla post-SFT.}
 }
 
 @article{liu2027llm,
@@ -38,8 +41,9 @@
   year={2026},
   html={https://arxiv.org/abs/2603.11080},
   arxiv={2603.11080},
+  website={https://self-vla.github.io/},
   selected={true},
-  abstract={An agentic skill-based VLA framework that integrates explicit manipulation skills into vision-language-action models for contact-rich disassembly tasks, improving task success rates by over 40% compared to end-to-end VLA baselines.}
+  abstract={An agentic VLA framework combining learned approach and recovery policies with explicit disassembly skills for contact-rich manipulation.}
 }
 
 @article{liu2026raise,
@@ -52,9 +56,11 @@
   pages={108609},
   year={2026},
   publisher={Elsevier},
-  html={https://arxiv.org/abs/2509.23048},
+  html={https://doi.org/10.1016/j.resconrec.2025.108609},
+  doi={10.1016/j.resconrec.2025.108609},
+  arxiv={2509.23048},
   selected={true},
-  abstract={A complete robotic disassembly and sorting pipeline for End-of-Life phones, integrating UR5e manipulator with YOLO-based object detection achieving 99%+ mAP. Multi-institutional collaboration with Idaho National Laboratory.}
+  abstract={A system for selective disassembly and sorting of end-of-life phones, integrating adaptive cutting, vision-based robotic sorting, and battery removal. Developed through a multi-institutional collaboration including Idaho National Laboratory.}
 }
 
 @article{zhang2026segmentation,
@@ -85,25 +91,28 @@
   abstract={A generative motion planner that flow-matches compact anchor waypoints instead of dense trajectories, then applies direct preference optimization to favor larger obstacle clearance. Transfers zero-shot to a Franka robot under noisy, partially occluded depth.}
 }
 
-@article{lei2026visiontorque,
-  abbr={arXiv},
+@inproceedings{lei2026visiontorque,
+  abbr={IROS},
   bibtex_show={true},
   title={Learning When to See and When to Feel: Adaptive Vision-Torque Fusion for Contact-Aware Manipulation},
   author={Lei, Jiuzhou and Liu, Chang and She, Yu and Liang, Xiao and Zheng, Minghui},
-  journal={arXiv preprint arXiv:2604.01414},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  address={Pittsburgh, PA},
   year={2026},
   html={https://arxiv.org/abs/2604.01414},
   arxiv={2604.01414},
   abstract={An adaptive fusion strategy for diffusion policies that admits force/torque signals only during contact phases while using vision throughout, improving success rate by 14% over the strongest baseline on contact-rich tasks.}
 }
 
-@article{liu2025vla,
-  abbr={arXiv},
+@inproceedings{liu2026msec,
+  abbr={MSEC},
   bibtex_show={true},
   title={Vision-Language-Action Models for Selective Robotic Disassembly: A Case Study on Critical Component Extraction from Desktops},
   author={Liu, Chang and Tian, Sibo and Behdad, Sara and Liang, Xiao and Zheng, Minghui},
-  journal={arXiv preprint arXiv:2512.04446},
-  year={2025},
+  booktitle={Proceedings of the ASME 2026 21st International Manufacturing Science and Engineering Conference (MSEC2026)},
+  address={State College, PA},
+  year={2026},
+  publisher={ASME},
   html={https://arxiv.org/abs/2512.04446},
   arxiv={2512.04446},
   abstract={Applied Vision-Language-Action models for critical component extraction from desktop computers, demonstrating VLA generalization across device types.}

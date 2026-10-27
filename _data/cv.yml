@@ -19,15 +19,15 @@
       institution: Texas A&M University, College Station, TX
       year: Jan. 2024 - Present
       description:
-        - "Advisor: Dr. Minghui Zheng (co-advised by Dr. Xiao Liang)"
-        - "Research Focus: Foundation models for robotic manipulation (VLA), reinforcement learning for sim-to-real transfer, graph-based world models, and intelligent disassembly/remanufacturing"
+        - "Advisor: Dr. Minghui Zheng"
+        - "Research focus: Robot learning for reliable, contact-rich manipulation; learning from human corrections; VLA policies and structured manipulation skills"
     - title: M.S., Mechanical Engineering
       institution: University at Buffalo, SUNY, Buffalo, NY
       year: Aug. 2018 - Feb. 2021
       description:
         - "Advisor: Dr. Minghui Zheng"
         - "Thesis: Deep learning-based collision prediction and motion planning for collaborative robots"
-        - "GPA: 3.9/4.0"
+        - "GPA: 3.83/4.0"
     - title: B.S., Energy and Power Engineering
       institution: Huazhong University of Science and Technology, Wuhan, China
       year: Sep. 2014 - June 2018
@@ -37,26 +37,23 @@
   contents:
     - title: Peer-Reviewed Journal Articles
       items:
-        - "<b>C. Liu</b>, S. Behdad, P. Pagilla, X. Liang, M. Zheng. \"Transforming Remanufacturing Automation with Large Language Models: A Forward-Looking Analysis with Case Studies.\" <i>Robotics and Computer-Integrated Manufacturing</i> 103, 103361 (2027)."
-        - "X. Zhang, <b>C. Liu</b>, X. Liang, M. Zheng, S. Behdad. \"Evaluating Large and Lightweight Vision Models for Irregular Component Segmentation in E-Waste Disassembly.\" <i>Journal of Manufacturing Science and Engineering</i> 148(10), 101005 (2026)."
-        - "<b>C. Liu</b>, B. Balasubramaniam, N. A. Yancey, M. H. Severson, A. Shine, P. Bove, B. Li, X. Liang, M. Zheng. \"RAISE: A Robot-Assisted Selective Disassembly and Sorting System for End-of-Life Phones.\" <i>Resources, Conservation and Recycling</i> 225, 108609 (2026)."
-        - "H. Zhao, <b>C. Liu</b>, B. Balasubramaniam, J. Li, J. Song, X. Liang, M. Zheng, B. Li. \"Precision 3D Profilometry of Consumer-Grade Computer Enclosures Using High Dynamic Range Fringe Projection.\" <i>Applied Optics</i> 64(30), 8986-8994 (2025)."
-        - "W. Liu, <b>C. Liu</b>, X. Liang, M. Zheng. \"A Hybrid Task-Constrained Motion Planning for Collaborative Robots in Intelligent Remanufacturing.\" <i>Mechatronics</i> 102, 103222 (2024)."
-        - "W. Liu, <b>C. Liu</b>, S. Sajedi, H. Su, X. Liang, M. Zheng. \"An Audio-Based Risky Flight Detection Framework for Quadrotors.\" <i>IET Cyber-Systems and Robotics</i> 6(1), e12105 (2024)."
-        - "Z. Chen, <b>C. Liu</b>, H. Su, X. Liang, M. Zheng. \"A Hybrid Disturbance Observer for Delivery Drone's Oscillation Suppression.\" <i>Mechatronics</i> 88, 102907 (2022)."
+        - '<b>C. Liu</b>, S. Behdad, P. Pagilla, X. Liang, M. Zheng. "Transforming Remanufacturing Automation with Large Language Models: A Forward-Looking Analysis with Case Studies." <i>Robotics and Computer-Integrated Manufacturing</i> 103, 103361 (2027).'
+        - 'X. Zhang, <b>C. Liu</b>, X. Liang, M. Zheng, S. Behdad. "Evaluating Large and Lightweight Vision Models for Irregular Component Segmentation in E-Waste Disassembly." <i>Journal of Manufacturing Science and Engineering</i> 148(10), 101005 (2026).'
+        - '<b>C. Liu</b>, B. Balasubramaniam, N. A. Yancey, M. H. Severson, A. Shine, P. Bove, B. Li, X. Liang, M. Zheng. "RAISE: A Robot-Assisted Selective Disassembly and Sorting System for End-of-Life Phones." <i>Resources, Conservation and Recycling</i> 225, 108609 (2026).'
+        - 'H. Zhao, <b>C. Liu</b>, B. Balasubramaniam, J. Li, J. Song, X. Liang, M. Zheng, B. Li. "Precision 3D Profilometry of Consumer-Grade Computer Enclosures Using High Dynamic Range Fringe Projection." <i>Applied Optics</i> 64(30), 8986-8994 (2025).'
+        - 'W. Liu, <b>C. Liu</b>, X. Liang, M. Zheng. "A Hybrid Task-Constrained Motion Planning for Collaborative Robots in Intelligent Remanufacturing." <i>Mechatronics</i> 102, 103222 (2024).'
+        - 'W. Liu, <b>C. Liu</b>, S. Sajedi, H. Su, X. Liang, M. Zheng. "An Audio-Based Risky Flight Detection Framework for Quadrotors." <i>IET Cyber-Systems and Robotics</i> 6(1), e12105 (2024).'
+        - 'Z. Chen, <b>C. Liu</b>, H. Su, X. Liang, M. Zheng. "A Hybrid Disturbance Observer for Delivery Drone''s Oscillation Suppression." <i>Mechatronics</i> 88, 102907 (2022).'
     - title: Peer-Reviewed Conference Papers
       items:
-        - "<b>C. Liu</b>, et al. \"PACER: Process-Aware VLA Policy Learning from Human Corrections for Robotic Disassembly.\" <i>Conference on Robot Learning (CoRL)</i>, 2026. <b>Accepted.</b>"
-        - "<b>C. Liu</b>, W. Liu, Z. Chen, M. Zheng. \"A Deep-ConvLSTM Collision Prediction Model for Manipulators in Dynamic Environment.\" <i>IFAC-PapersOnLine</i> 55(27), 68-75 (2022)."
+        - '<b>C. Liu</b>, S. Tian, L. Gong, Z. Fan, J. Li, X. Liang, M. Zheng. "PACER: Process-Aware VLA Policy Learning from Human Corrections for Robotic Disassembly." <i>10th Conference on Robot Learning (CoRL)</i>, Austin, TX, 2026. <b>Accepted</b>.'
+        - 'J. Lei, <b>C. Liu</b>, Y. She, X. Liang, M. Zheng. "Learning When to See and When to Feel: Adaptive Vision-Torque Fusion for Contact-Aware Manipulation." <i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</i>, Pittsburgh, PA, 2026.'
+        - '<b>C. Liu</b>, S. Tian, S. Behdad, X. Liang, M. Zheng. "Vision-Language-Action Models for Selective Robotic Disassembly: A Case Study on Critical Component Extraction from Desktops." <i>Proceedings of the ASME 2026 21st International Manufacturing Science and Engineering Conference (MSEC2026)</i>, State College, PA, 2026.'
+        - '<b>C. Liu</b>, W. Liu, Z. Chen, M. Zheng. "A Deep-ConvLSTM Collision Prediction Model for Manipulators in Dynamic Environment." <i>IFAC-PapersOnLine</i> 55(27), 68-75 (2022).'
     - title: Preprints & Under Review
       items:
-        - "S. Tian, <b>C. Liu</b>, M. Zheng, X. Liang. \"NeurRAFT: Robot Motion Planning via Anchor-Level Flow Matching with Clearance-Aware Preference Tuning.\" <i>arXiv:2608.24026</i> (2026)."
-        - "J. Lei, <b>C. Liu</b>, Y. She, X. Liang, M. Zheng. \"Learning When to See and When to Feel: Adaptive Vision-Torque Fusion for Contact-Aware Manipulation.\" <i>arXiv:2604.01414</i> (2026)."
-        - "<b>C. Liu</b>, S. Tian, X. Liang, M. Zheng. \"SELF-VLA: A Skill Enhanced Agentic Vision-Language-Action Framework for Contact-Rich Disassembly.\" <i>arXiv:2603.11080</i> (2026)."
-        - "<b>C. Liu</b>, S. Tian, S. Behdad, X. Liang, M. Zheng. \"Vision-Language-Action Models for Selective Robotic Disassembly.\" <i>arXiv:2512.04446</i> (2025)."
-    - title: Citation Metrics
-      items:
-        - "65 total citations, h-index 5, i10-index 2 (<a href=\"https://scholar.google.com/citations?user=MTOVnMwAAAAJ&hl=en\">Google Scholar</a>, September 2026)."
+        - '<b>C. Liu</b>, S. Tian, X. Liang, M. Zheng. "SELF-VLA: A Skill Enhanced Agentic Vision-Language-Action Framework for Contact-Rich Disassembly." <i>arXiv:2603.11080</i> (2026).'
+        - 'S. Tian, <b>C. Liu</b>, M. Zheng, X. Liang. "NeurRAFT: Robot Motion Planning via Anchor-Level Flow Matching with Clearance-Aware Preference Tuning." <i>arXiv:2608.24026</i> (2026).'
 
 - title: Research Experience
   type: time_table
@@ -68,24 +65,26 @@
         - title: Robotic Disassembly for End-of-Life Products
           contents:
             - "Implemented perception and disassembly sequence planning for various EoL desktops on UR5e using YOLO, GNN, and VLM"
-            - "Designed the complete data collection pipeline (teleoperation, dual cameras at 30 Hz, phase-labeled episodes) for VLA training, collecting 500+ demonstrations across multiple product types"
-            - "Collected and constructed a multimodal dataset of 20,000+ images for EoL desktops, covering computer vision, graph construction, and supporting LLM/VLM training"
-            - "Proposed SELF-VLA, an agentic skill-based VLA framework that improves task success rate by over 40% compared to end-to-end VLA baselines"
+            - "Built and open-sourced a GELLO-based teleoperation platform with ZMQ robot control, dual-camera capture, phase-labeled recording, and dataset export for OpenVLA, OpenVLA-OFT, and openpi"
+            - "Developed annotation software and contributed to a team multimodal dataset of end-of-life desktop computers; dataset work is ongoing"
+            - "Developed PACER (CoRL 2026): VLA post-training through native SFT using robot rollouts, human corrections, and clean demonstrations"
+            - "PACER achieved 87/100 successful approach-and-handoff trials versus 54/100 for vanilla post-SFT on a held-out UR5e benchmark across five component classes"
+            - "Developed SELF-VLA, coordinating learned approach and recovery policies with explicit disassembly and placement skills"
         - title: RAISE - Robot-Assisted Sorting for EoL Phones
           contents:
-            - "Developed the robotic manipulation workflow, including an automated YOLO-based sorting system (99%+ mAP) on UR5e. Collaboration with Idaho National Laboratory"
+            - "Designed and built a UR5e sorting station with Idaho National Laboratory, integrating hand-eye calibration, YOLOv8 instance segmentation, and automated sorting"
         - title: Additional Contributions
           contents:
-            - "Built a distributed teleoperation system on the GELLO framework with ZMQ-based communication, dual-camera streaming (Intel RealSense D435i + Luxonis OAK-D Pro at 30Hz), and HOSAS joystick control"
+            - "Developed a separate dual-joystick teleoperation system"
             - "Developed real-time disassembly sequence planning using GNN and VLM for robotic e-waste disassembly"
             - "Contributed to precision 3D scanning of computer enclosures using high dynamic range fringe projection (published in Applied Optics)"
     - title: Graduate Research Assistant
       institution: University at Buffalo, SUNY, CAL-UB Lab
-      year: Aug. 2019 - Apr. 2021
+      year: Aug. 2019 - Feb. 2021
       description:
-        - "Trained a Deep-ConvLSTM model that predicts manipulator collisions from raw images (95% accuracy) without an explicit dynamics model, enabling safer human-robot collaboration"
+        - "Developed a vision-only ConvLSTM model for robot and obstacle state prediction and stop-go collision avoidance without access to robot dynamics"
         - "Applied reinforcement learning techniques for collaborative robot path planning and safety-aware control"
-        - "Developed a transfer learning framework for quadrotor propeller damage detection using audio signals, achieving 98% accuracy across 4 fault types"
+        - "Built a transfer-learning pipeline for quadrotor propeller fault detection from flight-audio spectrograms"
         - "Set up, calibrated, and maintained laboratory equipment including Vicon motion capture system, UR5e manipulators, and drone platforms"
 
 - title: Industry Experience
