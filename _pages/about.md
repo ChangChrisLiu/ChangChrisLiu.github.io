@@ -2,11 +2,11 @@
 layout: about
 title: About
 permalink: /
-description: Chang (Chris) Liu is a Ph.D. researcher at Texas A&M University working on robot learning, vision-language-action models, and reliable manipulation.
+description: Chang (Chris) Liu, a robotics Ph.D. student at Texas A&M University. Research on vision-language-action models, human corrections, and robotic disassembly.
 ---
 
-I'm a Ph.D. student in Mechanical Engineering at [Texas A&M University](https://www.tamu.edu/), advised by [Dr. Minghui Zheng](https://zh.engr.tamu.edu/) in the Control and Robotics Lab.
+I'm a Ph.D. student in Mechanical Engineering at [Texas A&M University](https://www.tamu.edu/), advised by [Minghui Zheng](https://zh.engr.tamu.edu/).
 
-I study how robots can **learn from experience and recover from mistakes**. My work connects vision-language-action (VLA) models, human corrections, and structured manipulation skills, using the disassembly of end-of-life electronics as a real-world testbed.
+I work on vision-language-action models for **robotic disassembly**: learning from human corrections, recovering from failed attempts, and connecting learned policies to manipulation skills.
 
-Before my Ph.D., I worked in industrial 3D printing at [HeyGears](https://www.heygears.com/). Supporting automation in the field shaped the question behind my research: how can we make capable robot policies work reliably outside a carefully prepared demo?
+Previously, I worked at [HeyGears](https://www.heygears.com/) supporting industrial 3D printers.

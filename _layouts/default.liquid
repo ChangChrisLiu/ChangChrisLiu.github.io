@@ -16,7 +16,7 @@
   </head>
 
   <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}{% if page.layout == 'about' %} personal-home{% endif %}">
     <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- Header -->
     {% include header.liquid %}

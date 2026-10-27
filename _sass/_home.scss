@@ -1,0 +1,312 @@
+// An edited research record: a wide opening, an image-led paper, then short entries.
+.personal-home {
+  --home-display: "EB Garamond", Georgia, serif;
+  --home-body: 17px;
+  --home-small: 14px;
+  --home-heading: 34px;
+  --home-space: 88px;
+
+  #navbar,
+  footer.sticky-bottom {
+    border: 0;
+  }
+  #navbar .nav-link,
+  #navbar #search-toggle .nav-link {
+    font-size: var(--home-small);
+  }
+  #navbar .navbar-brand {
+    font-size: var(--home-body);
+  }
+  footer.sticky-bottom {
+    font-size: var(--home-small);
+    margin-top: var(--home-space) !important;
+  }
+  .main-content {
+    padding-top: 34px;
+  }
+  .home-page {
+    font-size: var(--home-body);
+    line-height: 1.65;
+  }
+  .home-page p {
+    max-width: 68ch;
+  }
+  .home-page h1,
+  .home-page h2,
+  .home-page h3 {
+    font-family: var(--home-display);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    color: var(--global-text-color);
+  }
+  .home-page h1 {
+    font-size: clamp(48px, 6.5vw, 88px);
+    line-height: 1.05;
+    margin: 0;
+  }
+  .home-page h2,
+  .home-page h3 {
+    font-size: var(--home-heading);
+    line-height: 1.15;
+    margin: 0;
+  }
+  .personal-role {
+    margin: 12px 0 32px;
+    font-size: 19px;
+  }
+  .personal-bio-grid {
+    display: grid;
+    grid-template-columns: 32% minmax(0, 1fr);
+    gap: 32px;
+    align-items: start;
+  }
+  .personal-portrait {
+    margin: 0;
+    max-width: 190px;
+  }
+  .personal-portrait img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+  }
+  .personal-portrait figcaption,
+  .home-demo figcaption {
+    font-size: var(--home-small);
+    color: var(--global-text-color-light);
+    line-height: 1.5;
+    margin-top: 12px;
+  }
+  .personal-bio p {
+    margin: 0 0 16px;
+  }
+  .personal-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 20px;
+    margin-top: 24px;
+  }
+  .personal-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: var(--home-small);
+  }
+  .cv-link {
+    padding: 8px 14px;
+    background: var(--global-theme-color);
+    color: var(--global-bg-color);
+    font-weight: 500;
+    transition: transform 160ms ease;
+  }
+  .cv-link:hover {
+    color: var(--global-bg-color);
+    background: var(--global-hover-color);
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+  .cv-link:active {
+    transform: translateY(0);
+  }
+  .personal-bio .personal-availability {
+    font-size: var(--home-small);
+    margin: 18px 0 0;
+  }
+  .home-work {
+    margin-top: var(--home-space);
+  }
+  .home-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 24px;
+    margin-bottom: 28px;
+  }
+  .home-section-heading > a,
+  .home-updates > div > a {
+    font-size: var(--home-small);
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .home-demo {
+    margin: 0 0 30px;
+  }
+  .home-demo video {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #172123;
+    aspect-ratio: 16 / 9;
+  }
+  .home-paper-copy,
+  .home-paper {
+    display: grid;
+    grid-template-columns: 38% minmax(0, 1fr);
+    gap: 48px;
+  }
+  .home-paper-venue {
+    font-size: var(--home-small);
+    color: var(--global-text-color-light);
+    margin: 8px 0 16px;
+  }
+  .home-paper-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+    list-style: none;
+    margin: 16px 0 0;
+    padding: 0;
+    font-size: var(--home-small);
+  }
+  .home-paper-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  .experiment-note summary {
+    font-size: var(--home-small);
+    color: var(--global-theme-color);
+    cursor: pointer;
+    min-height: 44px;
+    padding: 8px 0;
+  }
+  .experiment-note p {
+    padding: 16px 20px;
+    margin: 10px 0 0;
+    background: var(--personal-surface);
+  }
+  .home-paper {
+    margin-top: 96px;
+    align-items: center;
+  }
+  .home-paper-image {
+    display: block;
+    background: var(--personal-image-bg);
+    overflow: hidden;
+  }
+  .home-paper-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    transition: transform 300ms ease;
+  }
+  .home-paper-image:hover img {
+    transform: scale(1.025);
+  }
+  .home-updates {
+    display: grid;
+    grid-template-columns: 32% minmax(0, 1fr);
+    gap: 32px;
+    margin-top: var(--home-space);
+    padding: 36px;
+    background: var(--personal-surface);
+  }
+  .home-updates ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .home-updates li {
+    display: grid;
+    grid-template-columns: 82px minmax(0, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .home-updates li:last-child {
+    margin-bottom: 0;
+  }
+  .home-updates time {
+    font-size: var(--home-small);
+    color: var(--global-text-color-light);
+    font-variant-numeric: tabular-nums;
+    padding-top: 3px;
+  }
+  .home-updates p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .personal-home {
+    --home-space: 64px;
+    .personal-bio-grid {
+      grid-template-columns: 25% minmax(0, 1fr);
+      gap: 28px;
+    }
+    .home-paper,
+    .home-paper-copy {
+      gap: 28px;
+    }
+    .home-updates {
+      grid-template-columns: 25% minmax(0, 1fr);
+      padding: 28px;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .personal-home {
+    --home-heading: 30px;
+    --home-space: 56px;
+    .main-content {
+      padding-top: 22px;
+    }
+    .personal-role {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+    .personal-bio-grid,
+    .home-paper,
+    .home-paper-copy,
+    .home-updates {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    .personal-portrait {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      max-width: none;
+    }
+    .personal-portrait picture {
+      width: 100px;
+      flex-shrink: 0;
+    }
+    .personal-portrait figcaption {
+      margin: 0 0 2px;
+    }
+    .personal-links {
+      margin-top: 20px;
+    }
+    .home-section-heading {
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .home-paper,
+    .home-updates {
+      margin-top: var(--home-space);
+    }
+    .home-paper-copy .home-paper-links {
+      margin-top: 0;
+    }
+    .home-demo {
+      margin-bottom: 24px;
+    }
+    .home-updates {
+      padding: 24px;
+    }
+    .home-updates > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .home-updates li {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+  }
+}

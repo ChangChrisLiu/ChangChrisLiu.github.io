@@ -17,22 +17,24 @@ Updated October 27, 2026. This file is excluded from the public Jekyll build.
 - `assets/img/research/pacer.webp`: unchanged image from https://pacer-corl.github.io/assets/img/fig1_A1.webp .
 - `assets/img/research/raise.png`: unchanged Figure 1 from https://arxiv.org/html/2509.23048v1/Figure_1.png .
 - Portrait and SELF-VLA figure: existing repository assets, preserved.
+- `assets/video/pacer-demo.mp4` and `assets/img/research/pacer-demo.jpg`: unchanged `assets/video/hero_loop.mp4` and `assets/img/hero_poster.jpg` from https://pacer-corl.github.io/ . The project's own metadata identifies CPU fan, RAM and GPU trials, learned approach followed by a fixed removal skill, and 3x playback. The video is user-controlled, with no autoplay.
 
 ## Editing
 
 - Homepage biography: `_pages/about.md`; page structure: `_layouts/about.liquid`.
 - Selected work is shared between home and research through `_data/research.yml`.
 - Publications: `_bibliography/papers.bib`; online CV: `_data/cv.yml`.
-- Styling: `_sass/_personal.scss`, extending the existing al-folio teal identity.
+- Shared styling: `_sass/_personal.scss`. Homepage styling: `_sass/_home.scss`, with EB Garamond headings and the existing Roboto body text and teal palette.
 - Add dated news in `_news/`. No citation metrics are hard-coded.
 - Template examples and local private documents are excluded in `_config.yml`, not deleted.
 
 ## Site structure and release checks
 
-- The homepage layout also owns its hero statement, research themes, and Summer 2027 availability notice. Update the notice when availability changes.
+- The homepage layout owns its concise project summaries, dated news selection, real robot demonstration, expandable PACER experiment note, and Summer 2027 availability notice. Update the notice when availability changes. The brief introduction is in `_pages/about.md`.
 - Research narrative: `_pages/research.md`; experience narrative: `_pages/experience.md`; professional contact links: `_data/socials.yml`.
 - About is rendered explicitly in `_includes/header.liquid`. Other navigation entries use page front matter `nav` and `nav_order`: About, Research, Publications, Experience, CV.
-- `_includes/research_projects.liquid` renders the shared project data on Home, Research, and the retained Projects bridge page. Preserved image files are `assets/img/prof_pic.jpg` and `assets/img/publication_preview/selfvla.png`. ImageMagick generates responsive WebP variants during the build; originals remain as fallbacks.
+- `_includes/research_projects.liquid` renders shared project data on Research and the retained Projects bridge page. Home uses the same project images and links with a shorter presentation in `_layouts/about.liquid`. Preserved image files are `assets/img/prof_pic.jpg` and `assets/img/publication_preview/selfvla.png`. ImageMagick generates responsive WebP variants during the build; originals remain as fallbacks.
+- The homepage revision uses the Taste Skill's editorial-report direction. Reference pages: https://jonbarron.info/ and https://shurans.github.io/ . Their assets, code and copy were not reused. Local direction notes and screenshots are in ignored, build-excluded `.taste-skill/`. Animation runs once and is skipped for reduced motion; all content and native disclosure controls work without JavaScript.
 - The online CV YAML and downloadable PDF are separate copies. Updating the local academic CV does not automatically update either website copy.
 - See `INSTALL.md` and `.github/workflows/deploy.yml` for setup. Deployment and the post-deploy link check use Ubuntu 24.04, Ruby 3.3.5, Python 3.13, and ImageMagick, run `JEKYLL_ENV=production bundle exec jekyll build`, then PurgeCSS. The runner image is pinned because Ruby 3.3.5 is unavailable on Ubuntu 26.04. Local verification used the installed Ruby 3.4.6 runtime. Sass already compresses styles, so the redundant Jekyll CSS minification pass is disabled.
 - Source edits and a successful local production build are distinct from publication. Pushing to `main` or `master` triggers deployment; confirm the GitHub Actions result and the live pages before reporting a release as published.
