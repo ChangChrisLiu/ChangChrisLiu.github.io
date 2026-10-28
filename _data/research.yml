@@ -42,3 +42,5 @@
       url: https://doi.org/10.1016/j.resconrec.2025.108609
     - label: Preprint
       url: https://arxiv.org/abs/2509.23048
+    - label: Code
+      url: https://github.com/ChangChrisLiu/REMADE
