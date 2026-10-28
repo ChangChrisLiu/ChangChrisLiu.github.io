@@ -3,150 +3,59 @@ layout: default
 ---
 <div class="home-page">
   <section class="personal-intro" aria-labelledby="intro-title">
-    <h1 id="intro-title" data-arrive>Chang (Chris) Liu</h1>
-    <p class="personal-role" data-arrive>Robotics Ph.D. student at Texas A&amp;M</p>
-    <div class="personal-bio-grid">
-      <figure class="personal-portrait" data-arrive>
-        <picture>
-          {% if site.imagemagick.enabled %}
-            <source
-              type="image/webp"
-              srcset="{{ '/assets/img/prof_pic-480.webp' | relative_url }} 480w, {{ '/assets/img/prof_pic-800.webp' | relative_url }} 800w"
-              sizes="(max-width: 650px) 100px, 190px"
-            >
-          {% endif %}
-          <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Chang (Chris) Liu" width="768" height="1024" fetchpriority="high">
-        </picture>
-        <figcaption>
-          Chang Liu in publications.<br>
-          Chris in conversation.
-        </figcaption>
-      </figure>
-      <div class="personal-bio">
-        <div data-arrive>{{ content }}</div>
-        <div class="personal-links" aria-label="Professional links" data-arrive>
-          <a class="cv-link" href="{{ '/assets/pdf/Chang_Liu_CV.pdf' | relative_url }}">Download CV</a>
-          <a href="mailto:{{ site.data.socials.email }}">Email</a>
-          <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">Scholar</a>
-          <a href="https://github.com/{{ site.data.socials.github_username }}">GitHub</a>
-          <a href="https://huggingface.co/{{ site.data.socials.huggingface_username }}">Hugging Face</a>
-          <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}/">LinkedIn</a>
-        </div>
-        <p class="personal-availability" data-arrive>I'm looking for a research internship in summer 2027.</p>
+    <div class="personal-bio">
+      <h1 id="intro-title">Chang (Chris) Liu</h1>
+      {{ content }}
+      <div class="personal-links" aria-label="Professional links">
+        <a href="mailto:{{ site.data.socials.email }}">Email</a>
+        <a href="{{ '/assets/pdf/Chang_Liu_CV.pdf' | relative_url }}">CV</a>
+        <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">Google Scholar</a>
+        <a href="https://github.com/{{ site.data.socials.github_username }}">GitHub</a>
+        <a href="https://huggingface.co/{{ site.data.socials.huggingface_username }}">Hugging Face</a>
+        <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}/">LinkedIn</a>
       </div>
+      <p class="personal-availability">I'm looking for a research internship in summer 2027.</p>
     </div>
+    <figure class="personal-portrait">
+      <picture>
+        {% if site.imagemagick.enabled %}
+          <source
+            type="image/webp"
+            srcset="{{ '/assets/img/prof_pic-480.webp' | relative_url }} 480w, {{ '/assets/img/prof_pic-800.webp' | relative_url }} 800w"
+            sizes="(max-width: 650px) 100px, 160px"
+          >
+        {% endif %}
+        <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Chang (Chris) Liu" width="768" height="1024" fetchpriority="high">
+      </picture>
+    </figure>
   </section>
 
   <section class="home-work" aria-labelledby="work-title">
-    <div class="home-section-heading" data-arrive>
-      <h2 id="work-title">Selected research</h2>
+    <div class="home-section-heading">
+      <h2 id="work-title">Selected publications</h2>
       <a href="{{ '/publications/' | relative_url }}">All publications</a>
     </div>
-    <article class="home-feature" aria-labelledby="pacer-title">
-      <figure class="home-demo" data-arrive>
-        <video
-          controls
-          muted
-          playsinline
-          preload="none"
-          poster="{{ '/assets/img/research/pacer-demo.jpg' | relative_url }}"
-          width="1920"
-          height="1080"
-          aria-label="PACER experiments on a UR5e robot"
-          aria-describedby="demo-caption"
-        >
-          <source src="{{ '/assets/video/pacer-demo.mp4' | relative_url }}" type="video/mp4">
-          <a href="https://pacer-corl.github.io/#demos">Watch the PACER experiments</a>
-        </video>
-        <figcaption id="demo-caption">
-          CPU fan, RAM and GPU. PACER approaches each component; a fixed skill completes removal. Video at 3× speed.
-        </figcaption>
-      </figure>
-      <div class="home-paper-copy">
-        <div data-arrive>
-          <h3 id="pacer-title">PACER</h3>
-          <p class="home-paper-venue">CoRL 2026</p>
-          <ul class="home-paper-links" aria-label="PACER resources">
-            <li><a href="https://arxiv.org/abs/2610.19248">Paper</a></li>
-            <li><a href="https://pacer-corl.github.io/">Project</a></li>
-            <li><a href="https://github.com/ChangChrisLiu/PACER">Code</a></li>
-          </ul>
-        </div>
-        <div data-arrive>
-          <p>
-            We fine-tune VLA policies on robot rollouts, human corrections and demonstrations. Task progress and execution outcomes determine the
-            training weight of each action chunk.
-          </p>
-          <details class="experiment-note">
-            <summary>Experiment details</summary>
-            <p>
-              On a held-out UR5e benchmark across five component classes, PACER achieved 87/100 successful approach-and-handoff trials, compared with
-              54/100 for vanilla post-SFT. The endpoint is approach and handoff to a fixed downstream skill.
-            </p>
-          </details>
-        </div>
-      </div>
-    </article>
-    {% for project in site.data.research offset: 1 %}
-      <article class="home-paper" aria-labelledby="{{ project.id }}-title">
-        <a class="home-paper-image" href="{{ project.links.first.url }}" aria-label="Read the {{ project.name }} paper" data-arrive>
-          <picture>
-            {% if site.imagemagick.enabled %}
-              {% assign image_stem = project.image | split: '.' | first %}
-              <source
-                type="image/webp"
-                srcset="{{ image_stem | append: '-480.webp' | relative_url }} 480w, {{ image_stem | append: '-800.webp' | relative_url }} 800w"
-                sizes="(max-width: 650px) calc(100vw - 44px), 400px"
-              >
-            {% endif %}
-            <img src="{{ project.image | relative_url }}" alt="{{ project.image_alt }}" loading="lazy" width="600" height="400">
-          </picture>
-        </a>
-        <div data-arrive>
-          <h3 id="{{ project.id }}-title">{{ project.name }}</h3>
-          <p class="home-paper-venue">{{ project.venue }}</p>
-          {% if project.id == 'self-vla' %}
-            <p>
-              We combine VLA approach and recovery policies with an explicit library of disassembly skills. A planner selects the skill, and a
-              corrector handles failed attempts.
-            </p>
-          {% else %}
-            <p>
-              A system for end-of-life phone disassembly, integrating cutting, sorting and battery removal. I built the UR5e sorting station,
-              including perception, hand-eye calibration and integration with Idaho National Laboratory.
-            </p>
-          {% endif %}
-          <ul class="home-paper-links" aria-label="{{ project.name }} resources">
-            {% for link in project.links %}
-              <li>
-                <a href="{{ link.url }}">{{ link.label }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </article>
-    {% endfor %}
+    {% bibliography --template bib_home --query @*[homepage=true] --group_by none %}
   </section>
 
   <section class="home-updates" aria-labelledby="updates-title">
-    <div data-arrive>
+    <div class="home-section-heading">
       <h2 id="updates-title">News</h2>
       <a href="{{ '/news/' | relative_url }}">Archive</a>
     </div>
     <ol>
-      <li data-arrive>
+      <li>
         <time datetime="2026-10-13">Oct 2026</time>
         <p><a href="https://arxiv.org/abs/2610.19248">PACER</a> paper, project page and code are public.</p>
       </li>
-      <li data-arrive>
+      <li>
         <time datetime="2026-09-07">Sep 2026</time>
         <p>PACER accepted to CoRL 2026.</p>
       </li>
-      <li data-arrive>
+      <li>
         <time datetime="2026-03-10">Mar 2026</time>
         <p><a href="https://arxiv.org/abs/2603.11080">SELF-VLA</a> preprint released.</p>
       </li>
     </ol>
   </section>
 </div>
-<script defer src="{{ '/assets/js/personal-home.js' | relative_url | bust_file_cache }}"></script>

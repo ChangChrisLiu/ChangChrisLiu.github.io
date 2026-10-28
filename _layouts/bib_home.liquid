@@ -1,0 +1,60 @@
+---
+---
+{% assign paper = site.data.home_papers[entry.key] %}
+{% assign paper_url = entry.html %}
+{% unless paper_url %}
+  {% assign paper_url = entry.arxiv | prepend: 'https://arxiv.org/abs/' %}
+{% endunless %}
+<article class="home-paper" aria-labelledby="{{ entry.key }}-title">
+  <a class="home-paper-image" href="{{ paper_url }}" aria-label="Read {{ entry.title | escape }}">
+    <picture>
+      {% if site.imagemagick.enabled %}
+        {% assign image_stem = paper.image | split: '.' | first %}
+        <source
+          type="image/webp"
+          srcset="{{ image_stem | append: '-480.webp' | relative_url }} 480w, {{ image_stem | append: '-800.webp' | relative_url }} 800w"
+          sizes="(max-width: 650px) 180px, 220px"
+        >
+      {% endif %}
+      <img src="{{ paper.image | relative_url }}" alt="{{ paper.alt }}" loading="lazy" width="600" height="400">
+    </picture>
+  </a>
+  <div class="home-paper-copy">
+    <h3 id="{{ entry.key }}-title">
+      <a href="{{ paper_url }}">{{ entry.title }}</a>
+    </h3>
+    <p class="home-paper-authors">
+      {%- for author in entry.author_array -%}
+        {% unless forloop.first %}, {% endunless %}
+        {%- if author.last == 'Liu' and author.first == 'Chang' -%}
+          <strong>
+            {{- author.first }}
+            {{ author.last -}}
+          </strong>
+        {%- else -%}
+          {{ author.first }}
+          {{ author.last }}
+        {%- endif -%}
+      {%- endfor -%}
+    </p>
+    <p class="home-paper-venue">
+      {% if entry.abbr == 'arXiv' %}Preprint{% elsif entry.booktitle %}{{ entry.booktitle }}{% else %}{{ entry.journal }}{% endif %} ·
+      {{ entry.year }}
+    </p>
+    <p class="home-paper-summary">{{ paper.summary }}</p>
+    <ul class="home-paper-links" aria-label="Resources for {{ entry.title | escape }}">
+      <li><a href="{{ paper_url }}">Paper</a></li>
+      {% if entry.arxiv and entry.publisher %}
+        {% unless paper_url contains 'arxiv.org' %}
+          <li><a href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv</a></li>
+        {% endunless %}
+      {% endif %}
+      {% if entry.website %}
+        <li><a href="{{ entry.website }}">Project page</a></li>
+      {% endif %}
+      {% if entry.code %}
+        <li><a href="{{ entry.code }}">Code</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</article>

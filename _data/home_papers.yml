@@ -1,0 +1,39 @@
+liu2026pacer:
+  image: /assets/img/research/pacer-overview.png
+  alt: PACER overview showing robot rollout traces, human corrections, and process-aware policy learning
+  summary: Learning VLA policies from robot rollouts, human corrections, and demonstrations, with action chunks weighted by task progress and execution outcomes.
+
+liu2027llm:
+  image: /assets/img/research/llm-remanufacturing.png
+  alt: ReManGPT architecture connecting language models with remanufacturing knowledge and tools
+  summary: An analysis of language models for remanufacturing, with case studies in disassembly planning, perception, and decision-making.
+
+liu2026selfvla:
+  image: /assets/img/publication_preview/selfvla.png
+  alt: SELF-VLA framework with a planner, disassembly skill library, and corrector
+  summary: Combining learned approach and recovery policies with an explicit library of manipulation skills for contact-rich disassembly.
+
+liu2026raise:
+  image: /assets/img/research/raise.png
+  alt: RAISE system integrating adaptive cutting, robotic sorting, and battery removal
+  summary: A system for end-of-life phone disassembly. I developed the UR5e sorting station, from perception and calibration to integration with Idaho National Laboratory.
+
+zhang2026segmentation:
+  image: /assets/img/research/component-segmentation.png
+  alt: E-waste disassembly dataset showing irregular electronic components
+  summary: Comparing SAM2 and YOLOv8 for irregular component segmentation using 1,456 annotated e-waste images.
+
+tian2026neurraft:
+  image: /assets/img/research/neurraft.png
+  alt: NeurRAFT pipeline from scene point clouds to anchor waypoints and clearance-aware motion planning
+  summary: Generating robot motion through anchor-level flow matching, with preference tuning to favor greater obstacle clearance.
+
+lei2026visiontorque:
+  image: /assets/img/research/vision-torque.png
+  alt: Adaptive policy combining visual features with contact-gated torque signals
+  summary: A manipulation policy that uses vision throughout a task and selectively incorporates torque feedback during contact.
+
+liu2026msec:
+  image: /assets/img/research/vla-desktop.png
+  alt: Vision-language-action tasks for extracting components from cluttered desktop computers
+  summary: A case study of VLA policies for selective component extraction from desktop computers.
