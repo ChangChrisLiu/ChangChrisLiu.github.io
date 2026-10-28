@@ -28,7 +28,7 @@ The common thread is making learning useful on real hardware: understanding how 
 ### HeyGears
 <p class="career-meta">Senior Technical Support Engineer · April 2021–November 2023</p>
 
-I supported industrial 3D printing across an East Coast region serving more than 70 clients and 300 printers. My responsibilities included field troubleshooting, new-product testing, customer training, and communicating practical hardware and software issues to R&D.
+Alongside my Senior Technical Support Engineer role, I worked on site as a **Field Application Engineer**, supporting industrial 3D printing across an East Coast region serving more than 70 clients and 300 printers. My responsibilities included hardware and software troubleshooting at customer sites, new-product testing, customer training, and communicating field requirements to R&D.
 
 This experience gave me a close view of what users need from automation: dependable operation, understandable failure modes, and solutions that fit an existing workflow. Those priorities carried with me when I returned to research.
 
