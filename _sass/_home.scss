@@ -59,8 +59,7 @@
     font-size: 14px;
     margin: 4px 0 0;
   }
-  .home-work,
-  .home-updates {
+  .home-work {
     margin-top: 28px;
   }
   .home-section-heading {
@@ -75,8 +74,7 @@
     font-size: 14px;
     flex-shrink: 0;
   }
-  .home-work ol.bibliography,
-  .home-updates ol {
+  .home-work ol.bibliography {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -128,28 +126,26 @@
   .home-paper-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0 18px;
+    gap: 6px 8px;
     list-style: none;
     padding: 0;
-    margin: 0;
-    font-size: 14px;
+    margin: 8px 0 0;
+    font-size: 13px;
   }
-  .home-updates ol {
-    margin-top: 12px;
+  .home-paper-links a {
+    justify-content: center;
+    padding: 3px 11px;
+    border: 1px solid var(--global-theme-color);
+    border-radius: 3px;
+    background: var(--personal-surface);
+    font-weight: 500;
+    line-height: 1.4;
+    text-decoration: none;
   }
-  .home-updates li {
-    display: grid;
-    grid-template-columns: 80px minmax(0, 1fr);
-    gap: 16px;
-    margin: 8px 0;
-    font-size: 14px;
-  }
-  .home-updates time {
-    color: var(--global-text-color-light);
-    font-variant-numeric: tabular-nums;
-  }
-  .home-updates p {
-    margin: 0;
+  .home-paper-links a:hover,
+  .home-paper-links a:focus-visible {
+    color: var(--global-bg-color);
+    background: var(--global-theme-color);
   }
   footer.sticky-bottom {
     margin-top: 32px !important;
@@ -226,10 +222,6 @@
     }
     .home-work ol.bibliography > li {
       padding: 18px 0 12px;
-    }
-    .home-updates li {
-      gap: 10px;
-      grid-template-columns: 70px minmax(0, 1fr);
     }
   }
 }
